@@ -1,0 +1,48 @@
+{
+  "title": "【论文标题】",
+  "subtitle": "【副标题】",
+  "abstract": "【中文摘要正文。】",
+  "keywords": ["关键词一", "关键词二", "关键词三"],
+
+  "sections": [
+    {
+      "heading": "绪论",
+      "content": [
+        {"type": "p", "text": "……已有研究表明{{cite:1,2}}，但对排版自动化关注不足{{cite:3}}。"},
+        {"type": "p", "text": "本文流程见{{fig:1}}，三种方案对比见{{tab:1}}。"},
+        {"type": "figure", "file": "images/fig1.png", "caption": "本文排版流程示意图"},
+        {"type": "chart", "chart_type": "column",
+         "categories": ["一季度", "二季度", "三季度", "四季度"],
+         "series": [{"name": "产量", "values": [120, 150, 180, 210]},
+                    {"name": "销量", "values": [80, 95, 130, 160]}],
+         "title": "各季度产量与销量", "data_labels": true,
+         "caption": "各季度产量与销量对比"},
+        {"type": "table", "caption": "三种排版方式对比", "header_rows": 1,
+         "data": [["对比项", "人工排版", "本文方法"], ["标题层级", "手动编号", "多级列表"]]}
+      ],
+      "subsections": [
+        {"heading": "研究背景", "content": [{"type": "p", "text": "……{{cite:2}}"}]},
+        {"heading": "研究内容", "content": [{"type": "p", "text": "……"}]}
+      ]
+    },
+    {"heading": "规范要点", "content": [{"type": "p", "text": "……"}]}
+  ],
+
+  "references": [
+    {
+      "category": "（1）学术著作、论文集、学位论文、报告",
+      "items": ["刘国，陈绍业，王风翥．图书馆目录[M]．北京：高等教育出版社，1957．"]
+    },
+    {
+      "category": "（2）期刊文章",
+      "items": [
+        "辛希孟．信息技术与信息服务国际研讨会论文集：A集[C]．北京：中国社会科学出版社，1994．",
+        "成升魁，沈镭．青藏高原人口、资源、环境与发展互动关系探讨[J]．自然资源学报，2000，15（4）．"
+      ]
+    }
+  ],
+
+  "appendix": [
+    {"heading": "附录 A  样式定义速查表", "paragraphs": ["……"]}
+  ]
+}
